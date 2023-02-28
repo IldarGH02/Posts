@@ -1,0 +1,35 @@
+.header {
+    background-color: #333D51;
+    .header__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+
+        .header__title {
+            font-size: 35px;
+            font-weight: 500;
+            color: #f1f1f1;
+        }
+
+        .header__link {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 400;
+            color: #f1f1f1;
+            transition: color .3s ease-in-out;
+
+            &:not(:last-child) {
+                margin-right: 25px;
+            }
+
+            &:hover {
+                color: #8a53f1;
+            }
+        }
+
+        .isActive {
+            color: #8a53f1;
+        }
+    }
+}
